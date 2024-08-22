@@ -29,7 +29,7 @@ function appStart() {
   const handleEnterKey = async () => {
     let 맞은_갯수 = 0;
 
-    //서버에서 정답을 받아오는 코드 await 필수 서버에서 올때까지 기다림.
+    //서버에서 정답을 받아오는 코드 await 필수 서버에서 값이 올때까지 기다림.
     const 응답 = await fetch("/answer");
     const 정답 = await 응답.json();
 
